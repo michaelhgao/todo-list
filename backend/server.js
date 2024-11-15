@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/api', todoRoutes);
+app.use('/app', todoRoutes);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
